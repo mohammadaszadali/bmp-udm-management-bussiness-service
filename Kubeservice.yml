@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bmp-udm-management-bussiness-service-svc
+  namespace: dtag-dev
+  labels:
+    app: bmp-udm-management-bussiness-service
+    version: latest
+spec:
+  type: NodePort
+  externalTrafficPolicy: Cluster
+  ports:
+  - port: 18937
+    nodePort: 30894
+    targetPort: 9007
+    protocol: TCP
+  selector:
+    app: bmp-udm-management-bussiness-service
+    version: latest

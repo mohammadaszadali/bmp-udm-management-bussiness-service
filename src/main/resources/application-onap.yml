@@ -1,0 +1,23 @@
+app:
+  env:
+    label: ONAP
+    color: orange
+
+apiVersion: 1.0.0
+logging:
+    level:
+        com:
+            assignment:
+                springboot:
+                    mongo: DEBUG
+    pattern:
+        console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+server:
+    port: 9007
+spring:
+    data:
+        mongodb:
+            database: BMP_UDMMANAGEMENT_1
+            host: 10.0.5.36
+            port: 27017
+udmManagementURL: http://172.31.8.16:8080/bss/v1/
