@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dtag.bm.udm.service</groupId>
 	<artifactId>bmp-udm-management-bussiness-service</artifactId>
-	<version>1.0</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>udm-management-bussiness-service</name>
 	<description>Udm Management Service</description>
 	<properties>
